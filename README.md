@@ -1,1 +1,1 @@
-# python-maze
+# Obstacle Course Pathfinding in Python
