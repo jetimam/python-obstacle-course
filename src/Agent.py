@@ -1,6 +1,4 @@
-from ast import If
 from queue import Queue
-from turtle import back
 
 class Agent:
 	def __init__(self, graph, spawn_point, destination_point):
@@ -62,8 +60,8 @@ class Agent:
 		path = []
 
 		while current_cell != self.spawn_point:
-			print(current_cell, backtracking_table[current_cell])
 			path.append(backtracking_table[current_cell])
 			current_cell = backtracking_table[current_cell]
 
-		return path.reverse()
+		path.reverse()
+		return path
