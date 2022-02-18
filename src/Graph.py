@@ -41,3 +41,19 @@ class Graph:
 				run = False
 		
 		return (x, y)
+
+	def get_destination(self, spawn_edge):
+
+		if spawn_edge == 0: #finding the opposite edge
+			x = self.width-1
+		else:
+			x = 0
+		
+		run = True
+		while run: #finding a legal position on that edge
+			rand = random.randint(0, self.width-1)
+			if self.array[x][rand] == 1:
+				y = rand
+				run = False
+		
+		return (x, y)
