@@ -57,3 +57,8 @@ class Graph:
 				run = False
 		
 		return (x, y)
+
+	def obstacle_check(self):
+		for i in range(self.width):
+			for j in range(self.width):
+				print('(', i , ',' , j, ') is:' , self.array[i][j])
