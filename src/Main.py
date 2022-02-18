@@ -11,3 +11,5 @@ destination = graph.get_destination(spawn_point[0])
 
 agent = Agent.Agent(graph, spawn_point, destination)
 print(agent.get_position(), agent.get_destination())
+print('---------')
+print(agent.find_destination_BFS())
