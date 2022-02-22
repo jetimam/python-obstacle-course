@@ -3,7 +3,7 @@ import random
 class Graph:
 	def __init__(self, width):
 		self.width = width
-		self.array = [[]]
+		self.array = []
 		self.OBSTACLE_RATE = 5 # this means there will be 1 obstacle per 5 columns
 		self.obstacle_amount = width // self.OBSTACLE_RATE
 
@@ -20,7 +20,7 @@ class Graph:
 					self.array[i].append(0)
 				else:
 					self.array[i].append(1)
-		self.array.pop()
+		self.array[1][2] = 2
 
 	def draw(self):
 		for i in range(self.width):

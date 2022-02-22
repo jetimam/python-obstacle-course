@@ -59,6 +59,7 @@ class Agent:
 	def back_track(self, current_cell, backtracking_table):
 		path = []
 
+		path.append(current_cell)
 		while current_cell != self.spawn_point:
 			path.append(backtracking_table[current_cell])
 			current_cell = backtracking_table[current_cell]
